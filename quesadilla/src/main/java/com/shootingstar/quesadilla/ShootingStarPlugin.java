@@ -260,5 +260,4 @@ public class ShootingStarPlugin extends JavaPlugin {
         int offsetZ = random.nextInt(radius * 2 + 1) - radius;
         return center.clone().add(offsetX, offsetY, offsetZ);
     }
-                                                            }
-                                                              
+}
