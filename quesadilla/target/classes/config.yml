@@ -1,0 +1,22 @@
+ShootingStar:
+  item: nether_star
+  name: "&e&lEstrella fugaz"
+  lore:
+    - "&eUna hermosa estrella fugaz"
+    - "&ecaida del cielo por la noche"
+  particles: glow
+  sound: block.amethyst_block.break
+  probability: 0.1   # Valor entre 0.1 y 10 (valores mayores = más probabilidad)
+  altitude: "25-50"  # Altitud desde la cual cae la estrella, relativa al bloque base
+  sky: true         # Si true, el bloque base debe tener cielo abierto
+
+OtraEstrella:
+  item: diamond
+  name: "&b&lEstrella Brillante"
+  lore:
+    - "&bLa magia del diamante cae del cielo"
+  particles: end_rod
+  sound: entity.experience_orb.pickup
+  probability: 0.05
+  altitude: "30-60"
+  sky: false
