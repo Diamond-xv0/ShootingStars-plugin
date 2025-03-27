@@ -1,0 +1,13 @@
+name: ShootingStarPlugin
+main: com.shootingstar.quesadilla.ShootingStarPlugin
+version: 1.20.4
+api-version: "1.20"
+commands:
+  shoting:
+    description: Comando principal para el plugin de estrellas fugaces.
+    usage: /shoting <reload|shoot|list|help>
+    permission: shotingstar.admin
+permissions:
+  shotingstar.admin:
+    description: Permiso para administrar el plugin de estrellas fugaces.
+    default: op
