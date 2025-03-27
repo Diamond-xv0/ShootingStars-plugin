@@ -9,4 +9,4 @@ Al instalarlo genera el archivo config.yml, donde está toda la configuración p
 # ADVERTENCIA
 Este plugin por ahora solo es compatible con paper 1.20.4, y puede llegar a tener varios errores.
 
-[![Descargar Plugin](https://img.shields.io/badge/Descargar-.jar-blue)](https://github.com/Diamond-xv0/ShootingStars-plugin/releases/download/beta-1.0/ShootingStar.jar)
+# [![Descargar Plugin](https://img.shields.io/badge/Descargar-.jar-blue)](https://github.com/Diamond-xv0/ShootingStars-plugin/releases/download/beta-1.0/ShootingStar.jar)
