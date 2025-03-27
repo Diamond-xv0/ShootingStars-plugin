@@ -11,7 +11,7 @@ Este plugin por ahora solo es compatible con paper 1.20.4, y puede llegar a tene
 
 <a href="https://github.com/Diamond-xv0/ShootingStars-plugin/releases/download/beta-1.0/ShootingStar.jar" style="text-decoration:none;">
   <div style="display:inline-block; background-color:blue; color:white; padding:20px 35px; border-radius:10px; font-size:40px; text-align:center;">
-#    Descargar Plugin
+    Descargar Plugin
   </div>
 </a>
 
