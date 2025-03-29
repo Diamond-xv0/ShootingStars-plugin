@@ -1,0 +1,12 @@
+ShootingStar:
+  item: nether_star
+  name: "&e&lEstrella fugaz"
+  lore:
+    - "&eUna hermosa estrella fugaz"
+    - "&ecaida del cielo por la noche"
+  particles: glow
+  sound: BLOCK_AMETHYST_BLOCK_BREAK
+  probability: 0.1   # Valor entre 0.1 y 10 (valores mayores = más probabilidad)
+  altitude: "25-50"  # Altitud desde la cual cae la estrella, relativa al bloque base
+  sky: true         # Si true, el bloque base debe tener cielo abierto
+  time: night
