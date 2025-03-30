@@ -1,9 +1,0 @@
-name: ShootingStarPlugin
-main: com.shootingstar.quesadilla.ShootingStarPlugin
-version: 1.1.0
-api-version: "1.20"
-commands:
-  shreload:
-    description: Recarga la configuración del plugin.
-    usage: /<command>
-    permission: shootingstars.admin
