@@ -1,0 +1,39 @@
+name: ShootingStar
+
+version: ${project.version}
+
+main: com.shootingstar.quesadilla.ShootingStarPlugin
+
+api-version: '1.20'
+
+description: Hace caer estrellas fugaces configurables desde el cielo con efectos y lógica de impacto.
+author: Diamondxv0
+softdepend: [WorldGuard]
+commands:
+  sh:
+    description: Comando principal del plugin ShootingStar.
+    usage: /<command> <subcomando> [argumentos...]
+    aliases: [shootingstar]
+
+permissions:
+  shootingstar.reload:
+    description: Permite usar /sh reload para recargar la configuración del plugin.
+    default: op
+  shootingstar.command.spawn:
+    description: Permite usar /sh spawn para generar una estrella manualmente.
+    default: op
+  shootingstar.command.starfall:
+    description: Permite usar /sh starfall para iniciar/detener una lluvia de estrellas.
+    default: op
+  shootingstar.command.*:
+    description: Concede acceso a todos los subcomandos de /sh.
+    default: op
+    children:
+      shootingstar.reload: true
+      shootingstar.command.spawn: true
+      shootingstar.command.starfall: true
+  shootingstar.*:
+    description: Concede acceso a todas las funcionalidades de ShootingStar.
+    default: op
+    children:
+      shootingstar.command.*: true

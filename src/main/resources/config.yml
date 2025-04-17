@@ -1,0 +1,75 @@
+# === ShootingStar Global Settings ===
+# This file controls the general behavior of the plugin.
+# To define stars, edit the 'stars.yml' file.
+
+settings:
+  # --- Automatic Spawning Task ---
+  # Settings for the process that spawns stars automatically.
+  task:
+    # Ticks (20 ticks = 1s) to wait after startup/reload before the first cycle.
+    initial-delay-ticks: 120
+    # Ticks between each cycle where the plugin attempts to spawn stars near players.
+    period-ticks: 60
+    # Radius (blocks) around each player to search for a valid spawn location.
+    spawn-check-radius: 30
+
+  # --- Visual/Sound Effects (During Fall) ---
+  # Settings for particles and sounds while the star is falling.
+  effects:
+    # Amount of particles generated each effect cycle.
+    particle-count: 5
+    # Extra speed/spread for particles (usually 0.0).
+    particle-speed: 0.0
+    # Ticks between each particle emission.
+    particle-interval-ticks: 2
+    # Volume of the falling sound (1.0 = 100%).
+    sound-volume: 1.0
+    # Pitch of the falling sound (1.0 = normal).
+    sound-pitch: 1.0
+    # Ticks between each playback of the falling sound.
+    sound-interval-ticks: 4
+
+  # --- Impact Logic ---
+  # Settings related to what happens when the star hits the ground.
+  impact:
+    # Ticks to wait after spawn before starting to check for impact.
+    check-delay-ticks: 5
+    # Ticks between each impact check (1 = very frequent, every tick).
+    check-interval-ticks: 1
+    # Radius (blocks) to apply the extra damage ('damage:' from the star definition) to entities.
+    damage-radius: 3.0
+
+  # --- Starfall Command (/sh starfall) ---
+  # Settings specific to the command that generates a star shower.
+  starfall:
+    # Ticks between each star spawned by the command.
+    interval-ticks: 7
+    # Maximum horizontal spread radius (blocks) for stars from the command.
+    radius: 40
+
+  # --- WorldGuard Integration ---
+  # Controls how the star's explosion interacts with WorldGuard protected regions
+  # regarding block damage (this only applies if 'damage_blocks: true' is set for the star).
+  worldguard:
+    # Choose how the star's explosion should behave inside WorldGuard regions
+    # by selecting which flag setting dictates block damage permission:
+    #
+    #  "tnt": The star explosion behaves like TNT.
+    #         It will break blocks ONLY if the 'tnt' flag is ALLOWED in the region.
+    #         (This is the Default, often denied in protected areas).
+    #
+    #  "other-explosion": The star explosion behaves like other plugin/environmental explosions.
+    #         It will break blocks ONLY if the 'other-explosion' flag is ALLOWED in the region.
+    #
+    #  "creeper-explosion": The star explosion behaves like a Creeper explosion.
+    #         It will break blocks ONLY if the 'creeper-explosion' flag is ALLOWED in the region.
+    #
+    #  "none": The star explosion IGNORES WorldGuard flags for block damage.
+    #         It will ALWAYS break blocks if 'damage_blocks: true' is set for the star, even in protected areas.
+    #
+    explosion-check-flag: "tnt"
+
+# That's all for the config!
+# Thanks for using ShootingStars <3
+# - KrystalFox Studio
+
