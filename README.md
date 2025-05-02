@@ -1,8 +1,8 @@
 # ShootingStars-plugin
-Un plugin en papermc, que está en fase beta.
+Un plugin paper/spigot de estrellas fugaces.
 
 Mecanicas:
-El plugin permite al jugador crear "estrellas fugaces", las cuales son un item especifico con particulas especificas que cae del cielo por la noche, puedes editar las particulas, nombre, descripción, sonido, y probabilidad que el item caiga, así también modificar algunas de sus condiciones.
+El plugin permite al jugador crear "estrellas fugaces", las cuales son un item especifico con particulas especificas que cae del cielo por la noche, puedes editar las particulas, nombre, descripción, sonido, y probabilidad que el item caiga, además permite añadir efectos de explosión, daño, y varias otras cosas!.
 
 Al instalarlo genera el archivo config.yml, donde está toda la configuración predeterminada y descripciones.
 
